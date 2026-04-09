@@ -102,6 +102,49 @@ document.addEventListener('DOMContentLoaded', function() {
         ring.style.animationDelay = `${index}s`;
     });
 
+    // Gallery functionality
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            const index = this.getAttribute('data-index');
+            
+            // Remove active class from all thumbnails and images
+            thumbnails.forEach(t => t.classList.remove('active'));
+            galleryImages.forEach(img => img.classList.remove('active'));
+            
+            // Add active class to clicked thumbnail and corresponding image
+            this.classList.add('active');
+            const targetImage = document.querySelector(`.gallery-image[data-index="${index}"]`);
+            if (targetImage) {
+                targetImage.classList.add('active');
+            }
+        });
+    });
+
+    // Auto-rotate gallery (optional)
+    let currentImageIndex = 0;
+    const autoRotateGallery = () => {
+        setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            
+            thumbnails.forEach(t => t.classList.remove('active'));
+            galleryImages.forEach(img => img.classList.remove('active'));
+            
+            const activeThumbnail = document.querySelector(`.thumbnail[data-index="${currentImageIndex}"]`);
+            const activeImage = document.querySelector(`.gallery-image[data-index="${currentImageIndex}"]`);
+            
+            if (activeThumbnail && activeImage) {
+                activeThumbnail.classList.add('active');
+                activeImage.classList.add('active');
+            }
+        }, 4000); // Change image every 4 seconds
+    };
+    
+    // Uncomment the line below to enable auto-rotation
+    // autoRotateGallery();
+
     // Mobile menu toggle (if needed in future)
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const mobileMenu = document.querySelector('.mobile-menu');
