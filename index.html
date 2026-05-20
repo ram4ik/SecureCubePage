@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>SecureCube - Professional Risk Assessment for iOS & iPad</title>
     <meta name="description" content="Assess risks like a pro with SecureCube. Calculate threat scores, simulate scenarios, and protect what matters. Professional risk assessment app for iPhone and iPad.">
     <link rel="stylesheet" href="styles.css">
@@ -17,11 +19,42 @@
                 <span class="logo-text">SecureCube</span>
             </div>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#security">Security</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#download" class="cta-button">Download Now</a>
+                <a href="#features" data-i18n="nav_features">Features</a>
+                <a href="#security" data-i18n="nav_security">Security</a>
+                <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+                <a href="#download" class="cta-button" data-i18n="nav_download">Download Now</a>
             </div>
+            <div class="language-selector">
+                <button class="language-button" id="languageButton">
+                    <span class="language-icon">🌐</span>
+                    <span class="current-language" id="currentLanguage">EN</span>
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option" data-lang="en">🇬🇧 English</div>
+                    <div class="language-option" data-lang="fi">🇫🇮 Suomi</div>
+                    <div class="language-option" data-lang="sv">🇸🇪 Svenska</div>
+                    <div class="language-option" data-lang="no">🇳🇴 Norsk</div>
+                    <div class="language-option" data-lang="ru">🇷🇺 Русский</div>
+                    <div class="language-option" data-lang="pl">🇵🇱 Polski</div>
+                    <div class="language-option" data-lang="de">🇩🇪 Deutsch</div>
+                    <div class="language-option" data-lang="it">🇮🇹 Italiano</div>
+                    <div class="language-option" data-lang="fr">🇫🇷 Français</div>
+                    <div class="language-option" data-lang="es">🇪🇸 Español</div>
+                    <div class="language-option" data-lang="pt">🇵🇹 Português</div>
+                    <div class="language-option" data-lang="pt-BR">🇧🇷 Português (BR)</div>
+                    <div class="language-option" data-lang="tr">🇹🇷 Türkçe</div>
+                    <div class="language-option" data-lang="ko">🇰🇷 한국어</div>
+                    <div class="language-option" data-lang="zh">🇨🇳 简体中文</div>
+                    <div class="language-option" data-lang="ja">🇯🇵 日本語</div>
+                    <div class="language-option" data-lang="ar">🇸🇦 العربية</div>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -31,55 +64,35 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="badge-icon">🛡️</span>
-                    Professional Risk Assessment
+                    <span data-i18n="hero_badge">Professional Risk Assessment</span>
                 </div>
                 <h1 class="hero-title">
-                    Assess Risks Like a <span class="gradient-text">Pro</span>
+                    <span data-i18n="hero_title">Assess Risks Like a</span> <span class="gradient-text" data-i18n="hero_title_gradient">Pro</span>
                 </h1>
-                <p class="hero-subtitle">
-                    Calculate threat scores, simulate scenarios, and protect what matters most. 
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    Calculate threat scores, simulate scenarios, and protect what matters most.
                     SecureCube transforms uncertainty into actionable intelligence for security professionals.
                 </p>
                 <div class="hero-cta">
                     <a href="https://apps.apple.com/us/app/securecube/id6759824121" class="download-button primary">
                         <span class="apple-icon">📱</span>
-                        Download for iPhone & iPad
+                        <span data-i18n="hero_download">Download for iPhone & iPad</span>
                     </a>
                     <div class="hero-stats">
                         <div class="stat">
-                            <span class="stat-number">6</span>
-                            <span class="stat-label">Threat Categories</span>
+                            <span class="stat-number" data-i18n="hero_stat1_number">6</span>
+                            <span class="stat-label" data-i18n="hero_stat1_label">Threat Categories</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Private & Secure</span>
+                            <span class="stat-number" data-i18n="hero_stat2_number">100%</span>
+                            <span class="stat-label" data-i18n="hero_stat2_label">Private & Secure</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="app-interface">
-                            <div class="risk-gauge">
-                                <div class="gauge-circle">
-                                    <div class="gauge-fill"></div>
-                                    <div class="gauge-center">
-                                        <span class="risk-score">7.2</span>
-                                        <span class="risk-label">Risk Score</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="threat-categories">
-                                <div class="category political">Political</div>
-                                <div class="category economic">Economic</div>
-                                <div class="category security">Security</div>
-                                <div class="category environmental">Environmental</div>
-                                <div class="category operational">Operational</div>
-                                <div class="category cyber">Cyber</div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="460x998bb.webp" alt="SecureCube App Interface" class="hero-phone-screenshot">
                 </div>
             </div>
         </div>
@@ -89,29 +102,29 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Comprehensive Risk Analysis</h2>
-                <p>Evaluate risks using proven mathematical models: Risk = Probability × Impact × Vulnerability</p>
+                <h2 data-i18n="features_title">Comprehensive Risk Analysis</h2>
+                <p data-i18n="features_subtitle">Evaluate risks using proven mathematical models: Risk = Probability × Impact × Vulnerability</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Dashboard Analytics</h3>
-                    <p>Visualize your overall risk score with intuitive charts and gauges. Track multiple projects simultaneously with real-time insights.</p>
+                    <h3 data-i18n="feature1_title">Dashboard Analytics</h3>
+                    <p data-i18n="feature1_desc">Visualize your overall risk score with intuitive charts and gauges. Track multiple projects simultaneously with real-time insights.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
-                    <h3>Scenario Simulator</h3>
-                    <p>Test "what-if" scenarios by adjusting threat parameters in real-time. Make data-driven decisions before they impact your organization.</p>
+                    <h3 data-i18n="feature2_title">Scenario Simulator</h3>
+                    <p data-i18n="feature2_desc">Test "what-if" scenarios by adjusting threat parameters in real-time. Make data-driven decisions before they impact your organization.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
-                    <h3>Threat Factor Management</h3>
-                    <p>Add unlimited threat factors with precision sliders for accurate risk modeling across six critical threat categories.</p>
+                    <h3 data-i18n="feature3_title">Threat Factor Management</h3>
+                    <p data-i18n="feature3_desc">Add unlimited threat factors with precision sliders for accurate risk modeling across six critical threat categories.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
-                    <h3>Multi-Project Support</h3>
-                    <p>Manage multiple risk assessments simultaneously. Perfect for organizations with diverse portfolios and multiple locations.</p>
+                    <h3 data-i18n="feature4_title">Multi-Project Support</h3>
+                    <p data-i18n="feature4_desc">Manage multiple risk assessments simultaneously. Perfect for organizations with diverse portfolios and multiple locations.</p>
                 </div>
             </div>
         </div>
@@ -121,44 +134,58 @@
     <section class="screenshots-gallery">
         <div class="container">
             <div class="section-header">
-                <h2>See SecureCube in Action</h2>
-                <p>Explore the intuitive interface designed for professional risk assessment</p>
+                <h2 data-i18n="gallery_title">See SecureCube in Action</h2>
+                <p data-i18n="gallery_subtitle">Explore the intuitive interface designed for professional risk assessment</p>
             </div>
             <div class="gallery-container">
                 <div class="gallery-main">
-                    <div class="main-screenshot">
-                        <img src="460x998bb.webp" alt="SecureCube Dashboard" class="gallery-image active" data-index="0">
-                        <img src="460x998bb-2.webp" alt="Risk Analysis" class="gallery-image" data-index="1">
-                        <img src="460x998bb-3.webp" alt="Threat Categories" class="gallery-image" data-index="2">
-                        <img src="460x998bb-4.webp" alt="Scenario Simulator" class="gallery-image" data-index="3">
-                        <img src="460x998bb-5.webp" alt="Project Management" class="gallery-image" data-index="4">
-                        <img src="460x998bb-6.webp" alt="Settings & Privacy" class="gallery-image" data-index="5">
+                    <div class="phone-frame">
+                        <div class="main-screenshot">
+                            <img src="460x998bb.webp" alt="SecureCube Dashboard" class="gallery-image active" data-index="0">
+                            <img src="460x998bb-2.webp" alt="Risk Analysis" class="gallery-image" data-index="1">
+                            <img src="460x998bb-3.webp" alt="Threat Categories" class="gallery-image" data-index="2">
+                            <img src="460x998bb-4.webp" alt="Scenario Simulator" class="gallery-image" data-index="3">
+                            <img src="460x998bb-5.webp" alt="Project Management" class="gallery-image" data-index="4">
+                            <img src="460x998bb-6.webp" alt="Settings & Privacy" class="gallery-image" data-index="5">
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-thumbnails">
                     <div class="thumbnail active" data-index="0">
-                        <img src="460x998bb.webp" alt="Dashboard">
-                        <span>Dashboard</span>
+                        <div class="thumbnail-image">
+                            <img src="460x998bb.webp" alt="Dashboard">
+                        </div>
+                        <span class="thumbnail-label" data-i18n="gallery_thumb1">Dashboard</span>
                     </div>
                     <div class="thumbnail" data-index="1">
-                        <img src="460x998bb-2.webp" alt="Risk Analysis">
-                        <span>Risk Analysis</span>
+                        <div class="thumbnail-image">
+                            <img src="460x998bb-2.webp" alt="Risk Analysis">
+                        </div>
+                        <span class="thumbnail-label" data-i18n="gallery_thumb2">Risk Analysis</span>
                     </div>
                     <div class="thumbnail" data-index="2">
-                        <img src="460x998bb-3.webp" alt="Threat Categories">
-                        <span>Categories</span>
+                        <div class="thumbnail-image">
+                            <img src="460x998bb-3.webp" alt="Threat Categories">
+                        </div>
+                        <span class="thumbnail-label" data-i18n="gallery_thumb3">Categories</span>
                     </div>
                     <div class="thumbnail" data-index="3">
-                        <img src="460x998bb-4.webp" alt="Scenario Simulator">
-                        <span>Simulator</span>
+                        <div class="thumbnail-image">
+                            <img src="460x998bb-4.webp" alt="Scenario Simulator">
+                        </div>
+                        <span class="thumbnail-label" data-i18n="gallery_thumb4">Simulator</span>
                     </div>
                     <div class="thumbnail" data-index="4">
-                        <img src="460x998bb-5.webp" alt="Project Management">
-                        <span>Projects</span>
+                        <div class="thumbnail-image">
+                            <img src="460x998bb-5.webp" alt="Project Management">
+                        </div>
+                        <span class="thumbnail-label" data-i18n="gallery_thumb5">Projects</span>
                     </div>
                     <div class="thumbnail" data-index="5">
-                        <img src="460x998bb-6.webp" alt="Settings">
-                        <span>Settings</span>
+                        <div class="thumbnail-image">
+                            <img src="460x998bb-6.webp" alt="Settings">
+                        </div>
+                        <span class="thumbnail-label" data-i18n="gallery_thumb6">Settings</span>
                     </div>
                 </div>
             </div>
@@ -168,37 +195,37 @@
     <!-- Threat Categories -->
     <section class="threat-categories">
         <div class="container">
-            <h2>Six Critical Threat Categories</h2>
+            <h2 data-i18n="categories_title">Six Critical Threat Categories</h2>
             <div class="categories-grid">
                 <div class="category-item">
                     <div class="category-icon political-bg">🏛️</div>
-                    <h4>Political Instability</h4>
-                    <p>Government changes, policy shifts, regional conflicts</p>
+                    <h4 data-i18n="category1_title">Political Instability</h4>
+                    <p data-i18n="category1_desc">Government changes, policy shifts, regional conflicts</p>
                 </div>
                 <div class="category-item">
                     <div class="category-icon economic-bg">📈</div>
-                    <h4>Economic Volatility</h4>
-                    <p>Market fluctuations, currency risks, inflation</p>
+                    <h4 data-i18n="category2_title">Economic Volatility</h4>
+                    <p data-i18n="category2_desc">Market fluctuations, currency risks, inflation</p>
                 </div>
                 <div class="category-item">
                     <div class="category-icon security-bg">🛡️</div>
-                    <h4>Security Threats</h4>
-                    <p>Crime, terrorism, civil unrest</p>
+                    <h4 data-i18n="category3_title">Security Threats</h4>
+                    <p data-i18n="category3_desc">Crime, terrorism, civil unrest</p>
                 </div>
                 <div class="category-item">
                     <div class="category-icon environmental-bg">🌍</div>
-                    <h4>Environmental Risks</h4>
-                    <p>Natural disasters, climate events</p>
+                    <h4 data-i18n="category4_title">Environmental Risks</h4>
+                    <p data-i18n="category4_desc">Natural disasters, climate events</p>
                 </div>
                 <div class="category-item">
                     <div class="category-icon operational-bg">⚙️</div>
-                    <h4>Operational Risks</h4>
-                    <p>Supply chain, infrastructure, logistics</p>
+                    <h4 data-i18n="category5_title">Operational Risks</h4>
+                    <p data-i18n="category5_desc">Supply chain, infrastructure, logistics</p>
                 </div>
                 <div class="category-item">
                     <div class="category-icon cyber-bg">💻</div>
-                    <h4>Cyber Threats</h4>
-                    <p>Data breaches, system attacks, digital vulnerabilities</p>
+                    <h4 data-i18n="category6_title">Cyber Threats</h4>
+                    <p data-i18n="category6_desc">Data breaches, system attacks, digital vulnerabilities</p>
                 </div>
             </div>
         </div>
@@ -210,29 +237,29 @@
                 <div class="security-text">
                     <div class="security-badge">
                         <span class="badge-icon">🔐</span>
-                        Privacy First
+                        <span data-i18n="security_badge">Privacy First</span>
                     </div>
-                    <h2>Your Data Stays Yours</h2>
-                    <p class="security-description">
-                        All data is stored locally on your device. No cloud sync, no data collection, 
+                    <h2 data-i18n="security_title">Your Data Stays Yours</h2>
+                    <p class="security-description" data-i18n="security_desc">
+                        All data is stored locally on your device. No cloud sync, no data collection,
                         no tracking. Your risk assessments remain completely private and under your control.
                     </p>
                     <div class="security-features">
                         <div class="security-feature">
                             <span class="check-icon">✅</span>
-                            <span>100% Local Storage</span>
+                            <span data-i18n="security_feature1">100% Local Storage</span>
                         </div>
                         <div class="security-feature">
                             <span class="check-icon">✅</span>
-                            <span>No Data Collection</span>
+                            <span data-i18n="security_feature2">No Data Collection</span>
                         </div>
                         <div class="security-feature">
                             <span class="check-icon">✅</span>
-                            <span>Zero Tracking</span>
+                            <span data-i18n="security_feature3">Zero Tracking</span>
                         </div>
                         <div class="security-feature">
                             <span class="check-icon">✅</span>
-                            <span>Transparent Methodology</span>
+                            <span data-i18n="security_feature4">Transparent Methodology</span>
                         </div>
                     </div>
                 </div>
@@ -253,32 +280,32 @@
     <!-- Use Cases Section -->
     <section class="use-cases">
         <div class="container">
-            <h2>Designed for Professionals</h2>
-            <p class="section-subtitle">Whether you're assessing corporate risk or planning crisis response, SecureCube provides the tools you need.</p>
+            <h2 data-i18n="usecases_title">Designed for Professionals</h2>
+            <p class="section-subtitle" data-i18n="usecases_subtitle">Whether you're assessing corporate risk or planning crisis response, SecureCube provides the tools you need.</p>
             <div class="use-cases-grid">
                 <div class="use-case">
                     <div class="use-case-icon">🏢</div>
-                    <h4>Enterprise Risk Management</h4>
+                    <h4 data-i18n="usecase1">Enterprise Risk Management</h4>
                 </div>
                 <div class="use-case">
                     <div class="use-case-icon">📋</div>
-                    <h4>Business Continuity Planning</h4>
+                    <h4 data-i18n="usecase2">Business Continuity Planning</h4>
                 </div>
                 <div class="use-case">
                     <div class="use-case-icon">🔍</div>
-                    <h4>Security Risk Assessment</h4>
+                    <h4 data-i18n="usecase3">Security Risk Assessment</h4>
                 </div>
                 <div class="use-case">
                     <div class="use-case-icon">💼</div>
-                    <h4>Investment Due Diligence</h4>
+                    <h4 data-i18n="usecase4">Investment Due Diligence</h4>
                 </div>
                 <div class="use-case">
                     <div class="use-case-icon">🚛</div>
-                    <h4>Supply Chain Risk Analysis</h4>
+                    <h4 data-i18n="usecase5">Supply Chain Risk Analysis</h4>
                 </div>
                 <div class="use-case">
                     <div class="use-case-icon">🚨</div>
-                    <h4>Crisis Management Planning</h4>
+                    <h4 data-i18n="usecase6">Crisis Management Planning</h4>
                 </div>
             </div>
         </div>
@@ -288,37 +315,37 @@
     <section id="pricing" class="pricing">
         <div class="container">
             <div class="pricing-header">
-                <h2>Simple, Transparent Pricing</h2>
-                <p>No subscriptions, no recurring fees. Pay once and use forever.</p>
+                <h2 data-i18n="pricing_title">Simple, Transparent Pricing</h2>
+                <p data-i18n="pricing_subtitle">No subscriptions, no recurring fees. Pay once and use forever.</p>
             </div>
             <div class="pricing-cards">
                 <div class="pricing-card free">
                     <div class="pricing-header-card">
-                        <h3>Free</h3>
-                        <div class="price">$0</div>
-                        <p>Perfect for getting started</p>
+                        <h3 data-i18n="pricing_free_title">Free</h3>
+                        <div class="price" data-i18n="pricing_free_price">$0</div>
+                        <p data-i18n="pricing_free_desc">Perfect for getting started</p>
                     </div>
                     <div class="pricing-features">
-                        <div class="feature">✅ Up to 5 projects</div>
-                        <div class="feature">✅ Full risk engine</div>
-                        <div class="feature">✅ Dashboard analytics</div>
-                        <div class="feature">✅ Scenario simulator</div>
-                        <div class="feature">✅ All 6 threat categories</div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature1">Up to 5 projects</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature2">Full risk engine</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature3">Dashboard analytics</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature4">Scenario simulator</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature5">All 6 threat categories</span></div>
                     </div>
                 </div>
                 <div class="pricing-card premium">
-                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-badge" data-i18n="pricing_premium_badge">Most Popular</div>
                     <div class="pricing-header-card">
-                        <h3>Premium</h3>
-                        <div class="price">$9.99</div>
-                        <p>One-time purchase</p>
+                        <h3 data-i18n="pricing_premium_title">Premium</h3>
+                        <div class="price" data-i18n="pricing_premium_price">$9.99</div>
+                        <p data-i18n="pricing_premium_desc">One-time purchase</p>
                     </div>
                     <div class="pricing-features">
-                        <div class="feature">✅ Unlimited projects</div>
-                        <div class="feature">✅ All current features</div>
-                        <div class="feature">✅ All future premium features</div>
-                        <div class="feature">✅ Priority support</div>
-                        <div class="feature">✅ Professional quality</div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature6">Unlimited projects</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature7">All current features</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature8">All future premium features</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature9">Priority support</span></div>
+                        <div class="feature">✅ <span data-i18n="pricing_feature10">Professional quality</span></div>
                     </div>
                 </div>
             </div>
@@ -329,20 +356,20 @@
     <section id="download" class="download-section">
         <div class="container">
             <div class="download-content">
-                <h2>Transform Uncertainty into Intelligence</h2>
-                <p>Join security professionals who trust SecureCube for critical risk assessments.</p>
+                <h2 data-i18n="download_title">Transform Uncertainty into Intelligence</h2>
+                <p data-i18n="download_subtitle">Join security professionals who trust SecureCube for critical risk assessments.</p>
                 <div class="download-buttons">
                     <a href="https://apps.apple.com/us/app/securecube/id6759824121" class="download-button primary large">
                         <span class="apple-icon">📱</span>
                         <div class="button-text">
-                            <span class="button-main">Download on the</span>
-                            <span class="button-sub">App Store</span>
+                            <span class="button-main" data-i18n="download_button_main">Download on the</span>
+                            <span class="button-sub" data-i18n="download_button_sub">App Store</span>
                         </div>
                     </a>
                 </div>
                 <div class="compatibility">
-                    <p>Compatible with iPhone, iPad, Mac, and Apple Vision Pro</p>
-                    <p class="requirements">Requires iOS 17.0 or later</p>
+                    <p data-i18n="download_compatibility">Compatible with iPhone, iPad, Mac, and Apple Vision Pro</p>
+                    <p class="requirements" data-i18n="download_requirements">Requires iOS 17.0 or later</p>
                 </div>
             </div>
         </div>
@@ -357,17 +384,18 @@
                     <span class="logo-text">SecureCube</span>
                 </div>
                 <div class="footer-links">
-                    <a href="https://apps.apple.com/us/app/securecube/id6759824121">App Store</a>
-                    <a href="#security">Privacy</a>
-                    <a href="#features">Features</a>
+                    <a href="https://apps.apple.com/us/app/securecube/id6759824121" data-i18n="footer_appstore">App Store</a>
+                    <a href="#security" data-i18n="footer_privacy">Privacy</a>
+                    <a href="#features" data-i18n="footer_features">Features</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SecureCube. Professional risk assessment for iOS and iPad.</p>
+                <p>&copy; 2024 <span data-i18n="footer_copyright">SecureCube. Professional risk assessment for iOS and iPad.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
